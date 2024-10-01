@@ -1,3 +1,4 @@
+import 'package:corp3/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import '../models/rec_list.dart';
 import '../pages/record_page.dart';
@@ -41,6 +42,29 @@ class ItemList extends StatelessWidget {
                     style: const TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Center(
+                    child: TextButton(
+                      onPressed: () {
+                        for (var l in listings) {
+                          if (l == listing) {
+                            listings.remove(l);
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => const HomePage()),
+                            );
+                          }
+                        }
+                      },
+                      child: const Text(
+                        'Удалить',
+                        style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Color.fromARGB(255, 100, 100, 100),
+                        ),
+                      ),
                     ),
                   ),
                 ],
