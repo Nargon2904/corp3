@@ -20,13 +20,13 @@ class RecordPage extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(8),
                 child: Image.network(
-                  'https://raw.githubusercontent.com/sv022/MockDB/refs/heads/main/MusicTrade/img/${listing.img[0]}.png',
+                  'https://raw.githubusercontent.com/Nargon2904/corp3/refs/heads/main/assets/images/${listing.img[0]}.jpg',
                   width: 360,
                 ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 16),
+              padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

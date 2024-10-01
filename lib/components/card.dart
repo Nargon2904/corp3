@@ -23,11 +23,11 @@ class ItemList extends StatelessWidget {
           children: [
             Center(
               child: ClipRRect(
-                //borderRadius: BorderRadius.circular(8),
+                borderRadius: BorderRadius.circular(8),
                 child: Image.network(
                   //https://raw.githubusercontent.com/Nargon2904/corp3/refs/heads/main/assets/images/kits.jpg
                   'https://raw.githubusercontent.com/Nargon2904/corp3/refs/heads/main/assets/images/${listing.img[0]}.jpg',
-                  width: 340,
+                  width: 320,
                 ),
               ),
             ),
@@ -39,7 +39,7 @@ class ItemList extends StatelessWidget {
                   Text(
                     listing.title,
                     style: const TextStyle(
-                      fontSize: 22,
+                      fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
                   ),

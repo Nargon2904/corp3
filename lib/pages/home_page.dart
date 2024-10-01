@@ -8,13 +8,14 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //backgroundColor: Colors.grey,
       appBar: AppBar(
         title: Image.network(
           'https://raw.githubusercontent.com/Nargon2904/corp3/refs/heads/main/assets/images/anchor.PNG', 
           width: double.infinity)
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 30),
+        padding: const EdgeInsets.symmetric(horizontal: 40),
         child: ListView.builder(
           itemCount: listings.length,
           itemBuilder: (BuildContext context, int index) {
