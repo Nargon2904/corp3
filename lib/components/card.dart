@@ -25,7 +25,8 @@ class ItemList extends StatelessWidget {
               child: ClipRRect(
                 //borderRadius: BorderRadius.circular(8),
                 child: Image.network(
-                  'https://raw.githubusercontent.com/sv022/MockDB/refs/heads/main/MusicTrade/img/${listing.img[0]}.png',
+                  //https://raw.githubusercontent.com/Nargon2904/corp3/refs/heads/main/assets/images/kits.jpg
+                  'https://raw.githubusercontent.com/Nargon2904/corp3/refs/heads/main/assets/images/${listing.img[0]}.jpg',
                   width: 340,
                 ),
               ),
